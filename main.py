@@ -19,14 +19,10 @@ def next_card():
     window.after(3000, change_image)
 
 
-def english_card():
+def change_image():
     canvas.itemconfig(card_title, text="English", fill="white")
     canvas.itemconfig(word, text=current_card["English"], fill="white")
-
-
-def change_image():
     canvas.itemconfig(canvas_image, image=back_img)
-    english_card()
 
 
 window = Tk()
